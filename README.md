@@ -1,4 +1,4 @@
-<img src="assets/banner.png" alt="Cyberpunk C64 Command" width="960">
+<img src="banner.png" alt="Cyberpunk C64 Command" width="960">
 
 # Cyberpunk C64 Command
 
