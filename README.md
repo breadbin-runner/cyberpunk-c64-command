@@ -32,9 +32,15 @@ corresponding REST and FTP services must be enabled for the features you use.
 ## Download and instructions
 
 The Mac app will be available under **Releases** when the first public build
-is ready. It is intended for Apple silicon Macs. The current build is not
-signed or notarized with an Apple Developer ID; first launch may therefore
-require macOS's **Open** confirmation.
+is ready. It requires an Apple silicon Mac with macOS 13 or later. Electron and
+Node.js are included; neither needs to be installed separately. The current
+build is not signed or notarized with an Apple Developer ID. First launch may
+therefore require macOS's **Open** confirmation.
+
+On first launch, a short startup screen is followed by a one-time setup for
+language, animations, the optional Ultimate address and the start view. You can
+leave the address empty and use the local Disk Workbench straight away. A
+separate FTP bridge or Terminal window is not required.
 
 - [Deutsche Bedienungsanleitung](docs/Anleitung-DE.pdf)
 - [English user manual](docs/Manual-EN.pdf)
@@ -58,4 +64,8 @@ notices accompany the app download.
 Ultimate 64. Disk-Werkbank, Dateimanager, Fernsteuerung, Medien, Licht und
 SID-Sammlung sind in einer Oberfläche vereint. Die erste öffentliche
 Veröffentlichung ist für den **27. September 2026** geplant. Die App läuft auf
-Apple-Silicon-Macs; der Quellcode der App wird hier nicht veröffentlicht.
+Apple-Silicon-Macs ab macOS 13; Electron muss nicht separat installiert werden.
+Beim ersten Start führt ein einmaliger Dialog durch Sprache, Animationen,
+Ultimate-Adresse und Startansicht. Die Adresse darf leer bleiben; die lokale
+Disk-Werkbank ist sofort nutzbar. Der Quellcode der App wird hier nicht
+veröffentlicht.
