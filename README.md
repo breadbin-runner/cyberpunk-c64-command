@@ -69,3 +69,18 @@ Beim ersten Start führt ein einmaliger Dialog durch Sprache, Animationen,
 Ultimate-Adresse und Startansicht. Die Adresse darf leer bleiben; die lokale
 Disk-Werkbank ist sofort nutzbar. Der Quellcode der App wird hier nicht
 veröffentlicht.
+
+
+## Screenshots / Bildschirmfotos
+
+Main menu in English and German, shown without an active Ultimate connection. The timeout message reflects the offline device state in these captures.
+
+Hauptmenü auf Englisch und Deutsch, aufgenommen ohne aktive Ultimate-Verbindung. Die Zeitüberschreitung zeigt den Offline-Zustand des Geräts bei diesen Aufnahmen.
+
+### English
+
+![English main menu](docs/first%20pic_CYPC64COM_EN.png)
+
+### Deutsch
+
+![Deutsches Hauptmenü](docs/first%20pic_CYPC64COM_DE.png)
