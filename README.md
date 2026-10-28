@@ -1,45 +1,79 @@
-![Cyberpunk C64 Command – Neon-Banner](https://raw.githubusercontent.com/breadbin-runner/cyberpunk-c64-command/main/banner.png)
+![Cyberpunk C64 Command](banner.png)
 
 # Cyberpunk C64 Command
 
-**Eine Schaltzentrale für C64 Ultimate und Ultimate 64 auf macOS und Windows.** Disk-Images erkunden, Dateien übertragen, Programme starten, SID-Musik entdecken und sogar eigene Samples auf dem C64 abspielen – alles in einer App mit einem Hauch Neon für die Szene.
+A desktop companion for **C64 Ultimate and Ultimate 64** on Windows and macOS. Manage disk images and files, explore SID music, control your C64, and adjust compatible lighting.
 
-Die Disk-Werkstatt funktioniert auch ohne angeschlossenes Gerät. Für Fernsteuerung, Dateiübertragung und Wiedergabe verbindet sich die App direkt mit deinem Ultimate im lokalen Netzwerk. Ein zusätzliches Terminal oder Hilfsprogramm brauchst du dafür nicht.
+## Downloads
 
-## Was steckt drin?
-
-| Taste | Bereich | Das kannst du damit tun |
+| Platform | Version | Download |
 | --- | --- | --- |
-| **F1** | Start | Module und Verbindungsstatus im Blick behalten. |
-| **F2** | Disk-Werkstatt | D64-, D71- und D81-Images öffnen, Verzeichnisse und Vorschauen ansehen, Dateien sammeln und D64-Arbeitskopien bearbeiten. Mit **Disk Flip** mehrere Images für den Diskwechsel vorbereiten. |
-| **F3** | Dateimanager | Dateien und Ordner auf dem Ultimate durchsuchen, übertragen und herunterladen; Images einlegen sowie passende Programme und Musik starten. |
-| **F4** | C64-Fernsteuerung | Laufwerke A/B und den C64 steuern, etwa zurücksetzen, anhalten, fortsetzen oder Images einlegen. |
-| **F5** | Medienstart | PRG, CRT, SID, MOD und Disk-Images gezielt starten oder abspielen. Bei Disks zwischen schnellem Start und echtem `LOAD` wählen; MOD-Wiedergabe hängt von der Firmware ab. |
-| **F6** | Lichtstudio | Gehäuse- und Tastaturbeleuchtung einstellen oder eine der 30 Lichtszenen wählen. |
-| **F7** | SID-Sammlung | Eine separat bezogene High Voltage SID Collection durchsuchen, Titel bewerten, eigene SID-Dateien hinzufügen und Stücke auf dem Ultimate abspielen. |
-| **F8** | Transferzentrale | Uploads und Downloads mit Fortschritt verfolgen, abbrechen und bei Bedarf erneut versuchen. |
-| **F9** | PCM/REU Audio-Studio | WAV-Dateien in 8-Bit-Samples verwandeln, vorhören, als Projekt speichern und mit dem grafischen C64-Player wiedergeben. |
-| **F10** | Über diese App | Version, Projektinformationen und Kontakt finden. |
+| Windows 10 / 11 · 64-bit | **3.12.2** | [Download Windows installer](https://github.com/breadbin-runner/cyberpunk-c64-command/releases/download/v3.12.2/Cyberpunk-C64-Command-3.12.2-Windows-x64-Setup.exe) |
+| Mac · Apple silicon | 3.12.1 | [Download](https://github.com/breadbin-runner/cyberpunk-c64-command/releases/download/v3.12.2/Cyberpunk-C64-Command-3.12.1-macOS-Apple-Silicon.zip) |
+| Mac · Intel | 3.12.0 | [Download](https://github.com/breadbin-runner/cyberpunk-c64-command/releases/download/v3.12.2/Cyberpunk-C64-Command-3.12.0-macOS-Intel.zip) |
 
-Die Oberfläche gibt es auf **Deutsch und Englisch**. Im **Design Editor** kannst du Farben, Schrift, Anordnung und Details anpassen. Nicht benötigte Module lassen sich in den Einstellungen ausblenden.
+[Release notes](https://github.com/breadbin-runner/cyberpunk-c64-command/releases/tag/v3.12.2) · [German manual](docs/Anleitung-DE.pdf) · [English manual](docs/Manual-EN.pdf)
 
-## Loslegen
+The new features in version 3.12.2 are part of the **Windows release**. The Mac downloads remain at versions 3.12.1 for Apple silicon and 3.12.0 for Intel.
 
-1. Öffne die [Releases](https://github.com/breadbin-runner/cyberpunk-c64-command/releases) und wähle das Paket für **macOS mit Apple Silicon**, **macOS mit Intel-Prozessor** oder den **Windows-64-Bit-Installer**.
-2. Auf dem Mac das ZIP entpacken und die App nach „Programme“ bewegen. Unter Windows den Installer starten.
-3. Beim ersten Start Sprache und Startansicht wählen. Wenn du einen Ultimate verwenden möchtest, trage seine IP-Adresse oder seinen Hostnamen in den Einstellungen ein und verbinde dich.
-4. Für den Dateimanager zusätzlich den FTP-Zugang des Ultimate eintragen. Danach kannst du direkt in der App loslegen.
+## What’s new in Windows version 3.12.2
 
-Für Gerätefunktionen müssen Computer und **C64 Ultimate oder Ultimate 64** im selben erreichbaren Netzwerk sein. Die REST-Schnittstelle des Ultimate muss aktiviert sein; für den Dateimanager wird zusätzlich FTP benötigt. Ohne Ultimate kannst du weiterhin lokale Disk-Images öffnen und D64-Dateien bearbeiten.
+- **Multiple selection in the File Manager:** Select files and folders using checkboxes, Shift, or Ctrl+A.
+- **Batch actions:** Download selected files together, add supported disk images to Disk Flip, or delete selected files and empty folders after confirmation.
+- **Search across the Ultimate:** Find files and folders in all locations accessible via FTP, including SD and USB storage. Results show their full paths, and clicking a result opens its folder.
+- **Search controls:** See indexing progress, refresh the index, or stop a scan.
+- **Date sorting:** Sort files by modification date, with the newest files first.
+- **Improved Windows installer:** File verification, backup, and recovery help protect the installation if an error occurs.
+- **Update check:** The Help menu can check for future stable releases and offer the appropriate installer download.
 
-## Eigene Sounds auf dem C64
+## What you can do
 
-Im PCM/REU Audio-Studio lädst du eine WAV-Datei, wählst einen Ausschnitt und eine Abtastrate, hörst das fertige 8-Bit-Ergebnis vor und speicherst deinen Bearbeitungsstand bei Bedarf als `.pcmstudio`-Projekt. **„Übertragen & abspielen“** schreibt das Sample direkt in die REU und startet den passenden Maschinencode-Player. Auf dem C64 erscheinen Wellenform, Fortschritt, Zeit und bei langen Titeln eine Laufschrift.
+- **Disk Workbench:** Open D64, D71, and D81 images, inspect their contents, and edit supported D64 working copies. Use Disk Flip to prepare multiple images for disk changes.
+- **File Manager:** Browse, upload, download, and manage files on your Ultimate.
+- **C64 control:** Control the machine and its drives, including reset, pause, resume, and mounting disk images.
+- **Media Launcher:** Start supported programs, music, cartridges, and disk images.
+- **Light Studio:** Adjust compatible case and keyboard lighting.
+- **SID Collection:** Browse a separately obtained High Voltage SID Collection, add your own SID files, and play music on the Ultimate.
+- **Transfer Center:** Follow uploads and downloads, cancel transfers, and retry failed jobs.
+- **PCM/REU Audio Studio:** Turn WAV files into 8-bit samples, preview them, save projects, and play them on the C64 with the graphical player.
 
-Dafür benötigt dein Ultimate **16 MB REU**, **Ultimate Audio mit hörbarer Sampler-Ausgabe** und den **Ultimate DMA Service**. Das Command Interface ist nicht erforderlich. Für einen manuellen Start gibt es ein zusammengehöriges REU+PRG-Paket: Das REU-Abbild muss tatsächlich in die REU geladen werden, bevor du das PRG startest. Das bloße Kopieren auf SD- oder USB-Speicher reicht nicht.
+The interface is available in **English and German**. You can customize its appearance in the Design Editor and hide modules you do not use.
 
-## Anleitung und Austausch
+## Getting started
 
-Die App enthält eine ausführliche **deutsche und englische PDF-Anleitung**. Du findest sie über das Zahnrad in der App; sie liegt auch den Programmpaketen bei. Fragen, Ideen und Fehlermeldungen sind unter [GitHub Issues](https://github.com/breadbin-runner/cyberpunk-c64-command/issues) willkommen.
+1. Download the package for your computer from the table above.
+2. On Windows, run the installer. On Mac, extract the ZIP file and move the app to your Applications folder.
+3. If you want to use an Ultimate, enter its IP address or hostname in the app settings and connect.
+4. For the File Manager, also configure the Ultimate’s FTP access.
 
-Cyberpunk C64 Command ist ein unabhängiges Fanprojekt für die C64-Community und steht nicht in Verbindung mit Commodore, den Ultimate-Projekten oder der High Voltage SID Collection. Viel Spaß beim Stöbern, Schrauben und Hören! 💾
+Local disk image work does not require an Ultimate connection. Hardware features require your computer and Ultimate to be reachable on the same network. The Ultimate’s REST service must be enabled; the File Manager also requires FTP.
+
+All required runtime components are included. No separate FTP bridge or developer tools are needed.
+
+## Playing your own audio on the C64
+
+In the PCM/REU Audio Studio, load a WAV file, choose a section and sample rate, preview the 8-bit result, and save your work as a `.pcmstudio` project. “Transfer & Play” loads the sample into REU memory and starts the graphical C64 player.
+
+This feature requires **16 MB of REU memory**, **Ultimate Audio with audible sampler output**, and the **Ultimate DMA Service**.
+
+## Help and feedback
+
+The app includes German and English PDF manuals. Questions, suggestions, and bug reports are welcome in [GitHub Issues](https://github.com/breadbin-runner/cyberpunk-c64-command/issues). Please include your operating system, app version, and a description of what happened.
+
+[Support / Hilfe](SUPPORT.md) · [Network and installation counter](docs/NETWORK.md)
+
+## About
+
+Cyberpunk C64 Command is an independent fan project by **Breadbin Runner**. This repository contains downloads, manuals, and project information. Application source code is not published here.
+
+The project is not affiliated with Commodore, the Ultimate projects, or the High Voltage SID Collection. Third-party notices are included with the app.
+
+<details>
+<summary>Screenshots / Bildschirmfotos</summary>
+
+Main menu in English and German, captured without an active Ultimate connection.
+
+![English main menu](docs/first%20pic_CYPC64COM_EN.png)
+![German main menu](docs/first%20pic_CYPC64COM_DE.png)
+
+</details>
